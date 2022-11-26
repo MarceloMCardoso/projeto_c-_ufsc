@@ -16,6 +16,7 @@ int main() {
   	tam=10;
 
   	for(int i=0;i<tam;i++){
+  	cout << i << endl;
   		Serial1.SerialIsOn();
     	test.push_front(Serial1.SerialRead());
     	cout << Serial1.SerialRead() << endl;

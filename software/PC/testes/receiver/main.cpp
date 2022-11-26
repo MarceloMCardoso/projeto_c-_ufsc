@@ -6,12 +6,15 @@
 #include <termios.h>	// POSIX terminal control definitions
 #include "RS232Comm.h"
 
+int i=0;
+
 int main() {
 	int fd2; 										// file descriptors 
 	int readin, readinTot = 0;						// Bytes read from Rx port
 	char buffer[140];								// read buffer
 	char* bufptr;									// buffer ponter
-	while(1){
+	while(i<10){
+	i++;
 	// Open and configure ports
 	fd2 = openPort(PORT2);							// Port to read from (Rx)
 	configPort(fd2);								// Apply settings

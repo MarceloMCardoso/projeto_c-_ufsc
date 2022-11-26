@@ -7,12 +7,9 @@ void setup() {
 }
 
 void loop() {
-    Serial.print("TESTE"); //ESCREVE A EMNSAGEM
-    Serial.println(i);     //IMPRIME O VALOR DO CONTADOR
-     i++;
-
-     if(i==10)i=0;
-
-
+  if(i<10)i++;
+  else i=0;
+  Serial.print(i);
+  Serial.println("TESTE"); //ESCREVE A EMNSAGEM
   delay(500);
 }
