@@ -1,6 +1,6 @@
 
 // These constants, define values needed for the LDR readings and ADC
-#define LDR_PIN                   14
+#define LDR_PIN                   25
 #define MAX_ADC_READING           4095
 #define ADC_REF_VOLTAGE           3.3
 #define REF_RESISTANCE            10000  // measure this for best results
