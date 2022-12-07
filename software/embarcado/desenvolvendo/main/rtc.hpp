@@ -40,7 +40,7 @@ uint8_t rtc::getYear(){
   rtc.isrunning();
   DateTime now = rtc.now();
   year = now.year();
-  return year;}
+  return (uint8_t)year-208;}
 
 uint8_t rtc::getDay_of_week(){
   rtc.begin();
